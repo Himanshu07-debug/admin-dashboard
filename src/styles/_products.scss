@@ -152,3 +152,16 @@
     }
   }
 }
+
+.transactionProductCard {
+  @include mixin.flex(row, unset, center, 1rem);
+
+  > img {
+    @include mixin.square(4rem);
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  > span {
+    margin-left: auto;
+  }
+}

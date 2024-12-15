@@ -12,6 +12,9 @@ const Products = lazy(() => import("./pages/Products"));
 const NewProduct = lazy(() => import("./pages/management/NewProduct"));
 const ProductManagement = lazy(() => import("./pages/management/ProductManagement"));
 const TransactionManagement = lazy(() => import("./pages/management/TransactionManagement"));
+const BarCharts = lazy(() => import("./pages/charts/BarCharts"));
+const LineCharts = lazy(() => import("./pages/charts/LineCharts"));
+const PieCharts = lazy(() => import("./pages/charts/PieCharts"));
 
 
 const App = () => {
@@ -30,6 +33,11 @@ const App = () => {
           <Route path="/admin/product/new" element={ <NewProduct /> } />
           <Route path="/admin/product/:id" element={ <ProductManagement /> } />
           <Route path="/admin/transaction/:id" element={ <TransactionManagement /> } />
+
+          <Route path="/admin/chart/bar" element={<BarCharts />} />
+          <Route path="/admin/chart/pie" element={< PieCharts />} />
+          <Route path="/admin/chart/line" element={<LineCharts />} />
+
         </Routes>
       </Suspense>
 

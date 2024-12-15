@@ -1,6 +1,7 @@
 @use "mixin";
 @use "dashboard";
 @use "products";
+@use "chart";
 
 // If you use @use, then to access functions of mixin, do mixin.grid( , , )
 

@@ -1,7 +1,7 @@
 import { BsSearch } from "react-icons/bs";
 import AdminSidebar from "../components/AdminSidebar";
 import { FaRegBell } from "react-icons/fa";
-import userImg from "../assets/userpic.png";
+import userImg from "../assets/images/userpic.png";
 import { HiTrendingDown, HiTrendingUp } from "react-icons/hi";
 import data from "../assets/data.json";
 import { BiMaleFemale } from "react-icons/bi";
